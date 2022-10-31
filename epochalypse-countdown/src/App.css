@@ -1,15 +1,18 @@
 :root {
---bg-dark: #522424;
---green-glow: #00ff1a;
---white: rgb(248, 246, 226); 
+	--bg-dark: #522424;
+	--green-glow: #00ff1a;
+	--white: rgb(248, 246, 226);
 }
 .App {
-    text-align: center;
-    display: flex;
-    background-color: #490000;
-    animation: bg 60s infinite linear;
-    flex-direction: row-reverse;
-    justify-content: center;
+	margin: 1%;
+	border: solid black 2px;
+	border-radius: 25px;
+	text-align: center;
+	display: flex;
+	background-color: #490000;
+	animation: bg 60s infinite linear;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .App-logo {
@@ -23,21 +26,25 @@
 }
 
 .App-header {
-  padding: 5px;
-	/* background-image: url("./face.png");
+	border: solid white 5px;
+	border-radius: 25px;
+	margin: 0 5%;
+	padding: 2px;
+	background-image: url("./face.png");
 	background-position: center;
 	background-size: 300px;
-	background-repeat: no-repeat; */
-  min-height: 100vh;
+	background-repeat: no-repeat;
 	display: flex;
 	align-content: center;
-	justify-content: center;
-	align-items: center;
 }
 
 .countdown {
+	border: solid white 5px;
+	border-radius: 25px;
 	margin: 0 5%;
+	padding: 5%;
 	max-width: 500px;
+	min-width: min-content;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -48,8 +55,8 @@
 }
 
 .time-part {
-  /* border: 2px solid #161545;*/
-  padding: 0 8px;
+	/* border: 2px solid #161545;*/
+	padding: 0 8px;
 }
 
 @font-face {
@@ -58,8 +65,8 @@
 }
 .digit {
 	color: var(--green-glow);
-  border: 2px solid var(--white);
-  border-radius: 10px;
+	border: 2px solid var(--white);
+	border-radius: 10px;
 	text-shadow: 0 0 30px var(--green-glow);
 	font-family: SevenSegment;
 }
@@ -74,28 +81,28 @@
 }
 
 @keyframes bg {
-  12.5% {
-    background-color: #490000;
-  }
-  25% {
-    background-color: #452d00;
-  }
-  37.5% {
-    background-color: #434300;
-  }
-  50% {
-    background-color: #2c5800;
-  }
-  62.5% {
-    background-color: #004b4b;
-  }
-  75% {
-    background-color: #000063;
-  }
-  87.5% {
-    background-color: #380154;
-  }
-  100% {
-    background-color: #490000;
-  }
+	12.5% {
+		background-color: #490000;
+	}
+	25% {
+		background-color: #452d00;
+	}
+	37.5% {
+		background-color: #434300;
+	}
+	50% {
+		background-color: #2c5800;
+	}
+	62.5% {
+		background-color: #004b4b;
+	}
+	75% {
+		background-color: #000063;
+	}
+	87.5% {
+		background-color: #380154;
+	}
+	100% {
+		background-color: #490000;
+	}
 }
