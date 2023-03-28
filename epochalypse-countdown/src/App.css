@@ -26,8 +26,6 @@
 }
 
 .App-header {
-	border: solid white 5px;
-	border-radius: 25px;
 	margin: 0 5%;
 	padding: 2px;
 	background-image: url("./face.png");
